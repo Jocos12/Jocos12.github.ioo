@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>À propos de Ghislain</title>
+    <link rel="stylesheet" href="About.css">
+</head>
+
+<style>
+    /* Styles CSS globaux */
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f0f0f0;
+    }
+
+    header {
+        background-color:#00bbff;
+        color: white;
+        padding: 10px 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .logo {
+        display: flex;
+        align-items: center;
+    }
+
+    .logo-img {
+        max-width: 100px;
+        max-height: 100px;
+    }
+
+    .logo-text {
+        font-size: 18px;
+        margin-left: 10px;
+        font-weight: bold;
+    }
+
+    .group {
+        margin-right: 20px;
+    }
+
+    .navigation {
+        list-style: none;
+        padding: 0;
+        display: flex;
+    }
+
+    .links-text {
+        text-decoration: none;
+        color: white;
+        margin-right: 20px;
+        transition: color 0.3s;
+    }
+
+    .links-text:hover {
+        color: blue;
+        text-decoration: underline;
+    }
+
+    /* Ajoutez davantage de styles globaux au besoin */
+
+    /* Styles spécifiques à la section "À propos" */
+    .about-section {
+        padding: 50px;
+        background-color: #333;
+        color: white;
+    }
+
+    .about-content h2 {
+        font-size: 36px;
+        margin-bottom: 20px;
+         font-family: 'Arial', sans-serif; 
+    }
+
+    .ghislain-info {
+        font-family: Arial, sans-serif;
+        line-height: 1.5;
+    }
+
+    /* Styles pour le pied de page */
+    footer {
+        background-color: #333;
+        color: white;
+        padding: 10px 0;
+        text-align: center;
+    }
+
+    .social-links {
+        margin: 10px 0;
+    }
+
+    .social-link {
+        text-decoration: none;
+        color: white;
+        margin: 0 10px;
+        display: inline-block;
+        transition: transform 0.2s ease-in-out;
+    }
+
+    .social-icon {
+        width: 30px;
+        height: 30px;
+        vertical-align: middle;
+        margin-right: 5px;
+    }
+
+    .social-link:hover {
+        color: #007bff;
+        transform: scale(1.2);
+
+    }
+
+
+    /* Add space between paragraphs */
+.about-content p {
+    margin-bottom: 30px;
+    font-size: 18px; /* Adjust the font size as needed */
+    
+    font-family: 'Times New Roman', serif; /* Change the font family to your preference */
+    color: white; /* Change the text color to your preference */
+    margin-bottom: 30px;
+}
+
+/* Define the initial state of the animated paragraphs */
+.animate-fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+/* Apply animations when paragraphs are in view */
+.animate-fade-in.animate-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+</style>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="photo/logo1.jpg" alt="Maison ECAL" class="logo-img"></a>
+            <span class="logo-text">Maison ECAL&Divers</span>
+        </div>
+        <div class="group">
+            <ul class="navigation">
+                <li><a href="index.html" class="links-text">Accueil</a></li>
+                <li><a href="portfolio.html" class="links-text" data-section="about">Portfolio</a></li>
+                <li><a href="AproposDeNous.html" class="links-text" data-section="about">À propos</a></li>
+                <li><a href="Education.html" class="links-text" data-section="services">Éducation</a></li>
+                <li><a href="Professional.html" class="links-text" data-section="about">Expérience professionnelle</a>
+                </li>
+                <li><a href="courses.html" class="links-text">Cours</a></li>
+                <li><a href="contact.html" class="links-text" data-section="contact">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <section class="about-section">
+        <div class="about-content">
+            <h2>À propos de Ghislain Kisamba : <br><br></h2>
+            <div class="services-container">
+                <p class="animate">Ghislain est un professionnel de la logistique titulaire d'un diplôme en
+                    Logistique internationale solidaire de l'Institut Bioforce en France.
+                    <p> De plus, il est certifié en
+                    Management et Leadership, ainsi qu'en Conception et Gestion de projets humanitaires, tous obtenus en
+                    France.</p><p> Sa carrière professionnelle impressionnante s'étend sur plus de 8 ans en
+                    tant que responsable logistique, où il a offert son expertise à la Mission du Conseil Norvégien pour
+                    les Réfugiés au Niger, au Cameroun, en RDC et dans d'autres pays.</p>
+
+                <p class="animate">En tant que logisticien, Ghislain fait preuve d'une gestion exceptionnelle de la
+                    complexité, essentielle pour coordonner les opérations logistiques dans des environnements parfois
+                    difficiles.</p><p> Il fait preuve d'une grande souplesse pour s'adapter rapidement aux situations imprévues
+                    et aux urgences, une compétence cruciale dans le domaine humanitaire.</p>
+
+                <p class="animate">Son sens aigu de l'organisation lui permet de gérer efficacement les stocks, les
+                    approvisionnements et une équipe de ressources humaines tout en maintenant la structure nécessaire.</p>
+                    <p>Ghislain est également un communicateur efficace, capable de coordonner avec d'autres équipes,
+                    partenaires et agences pour garantir le succès des opérations.</p><p>Ses compétences analytiques lui
+                    permettent de prendre des décisions éclairées en examinant les données, les coûts, les délais et les
+                    risques. De plus, il gère efficacement le stress lié aux situations d'urgence, ce qui est essentiel
+                    pour maintenir la stabilité opérationnelle.</p>
+
+                <p class="animate">Doté d'une solide connaissance technique des outils logistiques, des systèmes de
+                    gestion de la chaîne d'approvisionnement et des réglementations, Ghislain veille à ce que les
+                    opérations se déroulent sans accroc.</p><p> Il porte une attention minutieuse aux détails pour éviter
+                    des erreurs coûteuses, démontrant ainsi son engagement envers l'excellence dans son
+                    domaine.<br>Enfin, Ghislain maintient une adhésion stricte à l'éthique, essentielle pour la gestion
+                    des précieuses ressources dédiées aux missions humanitaires.</p><p> Son solide bagage éducatif et son
+                    impressionnante carrière en tant que coordinateur logistique témoignent de sa contribution
+                    exceptionnelle au succès des opérations humanitaires dans divers pays africains.</p>
+            </div>
+        </div>
+    </section>
+
+    <div class="mtn">
+        <a href="AboutPortfolio.html" class="more-info-link"
+            style="font-family: 'Gabriola', cursive; font-size: 24px; color: #5a0e0e;">Read in English</a>
+    </div>
+
+    <footer>
+        <div class="social-links">
+            <a href="https://instagram.com/maison.ecal12?igshid=MzMyNGUyNmU2YQ==" class="social-link">
+                <img src="photo/instagram.png" alt="Instagram" class="social-icon">
+                Instagram
+            </a>
+            <a href="https://twitter.com/MaisonEcal?t=djST5JaWdC1vj1T97qX2gg&s=09" class="social-link">
+                <img src="photo/twitter-remover.png" alt="Twitter" class="social-icon">
+                Twitter
+            </a>
+        </div>
+        <p>&copy; 2023 Maison ECAL. Designed By Jocos</p>
+    </footer>
+</body>
+
+</html>

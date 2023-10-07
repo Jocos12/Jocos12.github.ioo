@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Contactez Maison ECAL</title>
+    <link rel="stylesheet" href="contact.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Montserrat:wght@100;300;400;500;700&family=Poppins:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <style>
+        /* Réinitialisez certaines styles par défaut */
+        body,
+        h1,
+        h2,
+        h3,
+        h4,
+        p,
+        ul,
+        li {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Définissez une image de fond pour le corps */
+        body {
+            background-image: url('image/img20.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            font-family: 'Lato', sans-serif;
+            color: #333;
+            /* Couleur du texte pour une meilleure lisibilité */
+        }
+
+        /* Style de l'en-tête */
+        header {
+            background-color: rgba(0, 0, 0, 0.7);
+            /* Ajoutez un fond noir semi-transparent à l'en-tête */
+            padding: 20px 0;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo-pic {
+            width: 40px;
+            /* Ajustez la taille de l'image du logo */
+            height: auto;
+            margin-right: 10px;
+        }
+
+        .logo-title {
+            font-size: 24px;
+            /* Ajustez la taille du titre du logo */
+            color: #fff;
+            /* Couleur du texte du logo */
+        }
+
+        .links {
+            list-style: none;
+            display: flex;
+        }
+
+        .links-text {
+            margin-right: 20px;
+            text-decoration: none;
+            color: #fff;
+            /* Couleur du texte du lien */
+            font-weight: 500;
+            transition: color 0.3s ease-in-out;
+        }
+
+        .links-text:hover {
+            color: #FFD700;
+            /* Changez la couleur du texte du lien au survol */
+        }
+
+        /* Style de la section de contact */
+        .info {
+            background-color: rgba(255, 255, 255, 0.9);
+            /* Ajoutez un fond blanc semi-transparent au contenu */
+            padding: 40px;
+            margin: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            /* Ajoutez une ombre subtile */
+        }
+
+        .contact-info p {
+            margin: 10px 0;
+        }
+
+        /* Style du formulaire */
+        .form-contact {
+            margin-top: 20px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        #buttons {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        #submit,
+        #cancel {
+            padding: 10px 20px;
+            background-color: #FFD700;
+            /* Couleur de fond du bouton */
+            color: #333;
+            /* Couleur du texte du bouton */
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        #submit:hover,
+        #cancel:hover {
+            background-color: #FFA500;
+            /* Changez la couleur de fond du bouton au survol */
+        }
+
+        /* Appliquez la police Gabriola et la taille de police 18px aux éléments spécifiés */
+        .h4,
+        p {
+            font-family: "Gabriola", cursive;
+            font-size: 24px;
+        }
+
+        /* Ajoutez d'autres styles supplémentaires au besoin */
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="container">
+                <h1 class="logo"><img src="photo/logo1.jpg" alt="" class="logo-pic" /><span class="logo-title">Maison
+                        ECAL&Divers</span></h1>
+                <div class="links">
+                    <a href="index.html" class="links-text">ACCUEIL</a>
+                    <a href="services.html" class="links-text">Services</a>
+                    <a href="Evenement.html" class="links-text">ÉVÉNEMENTS</a>
+                    <a href="portfolio.html" class="links-text">Portfolio</a>
+                    <a href="gallery.html" class="links-text">GALERIE</a>
+                    <a href="courses.html" class="links-text">COURS</a>
+                    <a href="contact.html" class="links-text">NOUS CONTACTER</a>
+                </div>
+        </nav>
+    </header>
+    <!-- <div class="container-img"> 
+        <img class ="contact-img"src="image/contactimage.jpg" width="550%"/>
+    </div> -->
+    <div class="info">
+        <div class="contact-info">
+
+            <h3 class="h4">Contactez-nous</h3>
+            <p>Pour plus d'informations, contactez-nous à :</p>
+            <p>Bukavu, Av.Pesage</p>
+            <p>Goma, AV. Du Port</p>
+            <p>Kalemie, AV. Dave</p>
+            <p>E-mail : ghislainkisamba@gmail.com<br>: ireneghislain@gmail.com</p>
+
+            <p>Tel : (+243)814626370<br>: (+243)997568776</p>
+
+        </div>
+        <div class="form-contact">
+            <form action="contact.php" method="post">
+                <input type="text" id="name" name="name" placeholder="Nom" required>
+                <input type="email" id="email" name="email" placeholder="E-mail" required>
+                <textarea id="message" placeholder="Message" name="message" rows="6" required></textarea>
+                <div id="buttons">
+                    <button type="submit" id="submit">Envoyer</button>
+                    <button type="reset" id="cancel">Annuler</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="first-footer">
+        <div class="footer-images">
+            <img src="photo/logo1.jpg" class="images-footer">
+        </div>
+        <div class="footer-container">
+            <div class="link-partner">
+                <h3 class="title2">Nous Contacter</h3>
+                <li class="list-links">(+243)814626370</li>
+                <li class="list-links">(+243)997568776</li>
+            </div>
+            <div class="link-partner">
+                <h3 class="title3"><img src="photo/location.png" class="location-logo"><span
+                        class="location">Emplacement</span></h3>
+                <li class="list-links">Goma</li>
+                <li class="list-links">Bukavu</li>
+                <li class="list-links">Kalemie</li>
+            </div>
+            <div class="link-partner">
+                <h3 class="title4">Médias Sociaux</h3>
+                <div class="logos">
+                    <li class="list-links"><img src="photo/instagram.png" class="instagram" /><a
+                            href="https://instagram.com/maison.ecal12?igshid=MzMyNGUyNmU2YQ=="><span
+                                class="instagram-text">Instagram</span></a></li>
+                    <!-- <li class="list-links" ><img src="image/linkdin.png" class="linkdin"><a href="https://rw.linkedin.com/company/simba-supermarket-ltd-rwanda"><span class="linkdin-text">Linkedin</span></a></li> -->
+                    <li class="list-links"><img src="photo/twitter-remover.png" class="twitter"><a
+                            href="https://twitter.com/MaisonEcal?t=djST5JaWdC1vj1T97qX2gg&s=09"><span
+                                class="instagram-text">Twitter</span></a></li>
+                    </li>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="copyright">
+            <p class="copyright-text">&#169; 2023 ECAL. Conçu par <span class="group1">Jocos, Sharo et Tcha-Vei</span>
+            </p>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,242 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Contact Maison ECAL</title>
+    <link rel="stylesheet" href="contact.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Montserrat:wght@100;300;400;500;700&family=Poppins:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <style>
+        /* Reset some default styles */
+        body,
+        h1,
+        h2,
+        h3,
+        h4,
+        p,
+        ul,
+        li {
+            margin: 0;
+            padding: 0;
+        }
+    
+        /* Set a background image for the body */
+        body {
+            background-image: url('image/img20.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            font-family: 'Lato', sans-serif;
+            color: #333;
+            /* Text color for better readability */
+        }
+    
+        /* Style the header */
+        header {
+            background-color: rgba(0, 0, 0, 0.7);
+            /* Add a semi-transparent black background to the header */
+            padding: 20px 0;
+        }
+    
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+    
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+    
+        .logo-pic {
+            width: 40px;
+            /* Adjust the logo image size */
+            height: auto;
+            margin-right: 10px;
+        }
+    
+        .logo-title {
+            font-size: 24px;
+            /* Adjust the logo title size */
+            color: #fff;
+            /* Logo text color */
+        }
+    
+        .links {
+            list-style: none;
+            display: flex;
+        }
+    
+        .links-text {
+            margin-right: 20px;
+            text-decoration: none;
+            color: #fff;
+            /* Link text color */
+            font-weight: 500;
+            transition: color 0.3s ease-in-out;
+        }
+    
+        .links-text:hover {
+            color: #FFD700;
+            /* Change link text color on hover */
+        }
+    
+        /* Style the contact section */
+        .info {
+            background-color: rgba(255, 255, 255, 0.9);
+            /* Add a semi-transparent white background to the content */
+            padding: 40px;
+            margin: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            /* Add a subtle shadow */
+        }
+    
+        .contact-info p {
+            margin: 10px 0;
+        }
+    
+        /* Style the form */
+        .form-contact {
+            margin-top: 20px;
+        }
+    
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+    
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+    
+        #buttons {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    
+        #submit,
+        #cancel {
+            padding: 10px 20px;
+            background-color: #FFD700;
+            /* Button background color */
+            color: #333;
+            /* Button text color */
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out;
+        }
+    
+        #submit:hover,
+        #cancel:hover {
+            background-color: #FFA500;
+            /* Change button background color on hover */
+        }
+
+        /* Apply Gabriola font and font size 18px to the specified elements */
+.h4, p {
+    font-family: "Gabriola", cursive;
+    font-size: 24px;
+}
+
+/* Add any additional styles as needed */
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="container">
+                <h1 class="logo"><img src="photo/logo1.jpg" alt="" class="logo-pic"/><span class="logo-title">Maison ECAL&Divers</span></h1>
+        <div class="links">
+            <a href="index.html" class="links-text">HOME</a>
+            <a href="EngAbout.html" class="links-text">ABOUT US</a>
+            <a href="Events.html" class="links-text">Some Events</a>
+            <a href="AboutPortfolio.html" class="links-text">About Ghislain</a>
+            <a href="gallery.html" class="links-text">GALLERY</a>
+            <a href="Engcours.html" class="links-text">COURSES</a>
+            <a href="contact.html" class="links-text">CONTACT US</a>
+        </div>
+        </nav>
+    </header>
+    <!-- <div class="container-img"> 
+        <img class ="contact-img"src="image/contactimage.jpg" width="550%"/>
+    </div> -->
+    <div class="info">
+        <div class="contact-info">
+            
+            <h3 class="h4">Get In Touch</h3>
+            <p>For more information, contact us at:</p>
+            <p>Bukavu, Av.Pesage</p>
+            <p>Goma, AV. Du Port</p>
+            <p>Kalemie, AV. Dave</p>
+            <p>E-mail: ghislainkisamba@gmail.com
+                <br>
+                      :ireneghislain@gmail.com
+            </p>
+            
+            <p>Tel:(+243)814626370
+                <br>
+                  :(+243)997568776
+            </p>
+
+        </div>
+        <div class="form-contact" >
+            <form action="contact.php" method="post">
+                <input type="text" id="name" name="name" placeholder="Name" required>
+                <input type="email" id= "email" name="email" placeholder="Email" required>
+                <textarea id="message" placeholder="Message" name="message" rows="6" required></textarea>
+                <div id="buttons">
+                    <button type="submit" id="submit">Submit</button>
+                    <button type="reset"   id="cancel">Cancel</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="first-footer">
+        <div class="footer-images">
+            <img src="photo/logo1.jpg" class="images-footer">
+        </div>
+        <div class="footer-container">
+        <div class="link-partner">
+            <h3 class="title2">Contact Us</h3>
+            <li class="list-links">(+243)814626370</li>
+            <li class="list-links">(+243)997568776</li>
+        </div>
+        <div class="link-partner">
+            <h3 class="title3"><img src="photo/location.png" class="location-logo"><span class="location">Location</span></h3>
+        <li class="list-links">Goma</li>
+        <li class="list-links">Bukavu</li>
+        <li class="list-links">Kalemie</li>
+        </div>
+        <div class="link-partner">
+            <h3 class="title4">Social Media</h3>
+            <div class="logos">
+            <li class="list-links" ><img src="photo/instagram.png"class="instagram" /><a href="https://instagram.com/maison.ecal12?igshid=MzMyNGUyNmU2YQ=="><span class="instagram-text">Instagram</span></a></li>
+            <!-- <li class="list-links" ><img src="image/linkdin.png" class="linkdin"><a href="https://rw.linkedin.com/company/simba-supermarket-ltd-rwanda"><span class="linkdin-text">Linkedin</span></a></li> -->
+            <li class="list-links" ><img src="photo/twitter-remover.png" class="twitter"><a href="https://twitter.com/MaisonEcal?t=djST5JaWdC1vj1T97qX2gg&s=09"><span class="instagram-text">twitter</span></a></li></li>
+            </div>
+        </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="copyright">
+            <p class="copyright-text">&#169; 2023 ECAL.  Designed by <span class="group1">Jocos ,Sharo and Tcha-Vei</span></p>
+        </div>
+    </footer>
+</body>

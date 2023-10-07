@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maison Ecal</title>
+    <link rel="stylesheet" href="About.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <a href="#" class="logo">
+            <img src="photo/logo1.jpg" alt="Ecal" class="logo-img">
+            <span>Maison ECAL&Divers</span>
+        </a>
+        <div class="group">
+            <ul class="navigation">
+                <li><a href="index.html" class="links-text">Home</a></li>
+                <li><a href="EngAbout.html" class="links-text" data-section="about">About Us</a></li>
+                <li><a href="Engcours.html" class="links-text" data-section="about">Courses</a></li>
+                <li><a href="portfolio.html" class="links-text" data-section="about">Portfolio</a></li>
+                <li><a href="services.html" class="links-text" data-section="services">Services</a></li>
+                <li><a href="gallery.html" class="links-text">Gallery</a></li>
+                <li><a href="contact.html" class="links-text" data-section="contact">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <section class="about-us">
+        <div class="about-container">
+            <div class="about-carousel">
+                <img src="photo/G10.png" alt="Image 1">
+                <img src="photo/G29.jpg" alt="Image 2">
+                <!-- Add more images here -->
+            </div>
+            <div class="about-text">
+                <h2>About Us</h2>
+                <p>Maison ECAL and Divers specializes in various logistics functions, providing innovative solutions to
+                    clients. We take pride in our expertise in order management and transportation.</p>
+                <p>Logistics is at the core of our business, ensuring smooth and efficient logistic support in various
+                    tasks. At Maison ECAL, we assist you in inventory management, supply chain coordination, and various
+                    logistics tasks, all with a commitment to ensuring customer satisfaction.</p>
+            </div>
+
+    </section>
+
+    <section class="mission-vision">
+        <div class="mission">
+            <h3>Mission of Maison ECAL:</h3>
+            <p>"Our mission at Maison ECAL is to leverage our logistics expertise to offer innovative solutions in order
+                management, transportation, inventory management, and supply chain coordination.</p>
+                <p> We are committed to
+                providing smooth and efficient logistic support in various tasks to meet our clients' needs.</p>
+                <p> Our
+                ultimate goal is to ensure customer satisfaction by offering high-quality logistics services."</p>
+        </div>
+        <div class="vision">
+            <h3>Vision of Maison ECAL:</h3>
+            <p>"At Maison ECAL, we aspire to become the preferred partner for our clients in logistics. Our vision is to
+                be recognized as industry leaders, offering advanced logistics services that anticipate market needs.
+                </p><p> We
+                aim to continue innovating in our logistics processes, improving inventory management, optimizing supply
+                chains, and reducing the environmental impact of our operations.</p><p> We firmly believe that every
+                interaction with our clients should be marked by efficiency, reliability, and total satisfaction,
+                strengthening our reputation for logistical excellence."</p>
+        </div>
+    </section>
+
+    <div class="mtn">
+        <a href="AproposDeNous.html" class="more-info-link"
+            style="font-family: 'Gabriola', cursive; font-size: 24px; color: #5a0e0e;">Lire en Francais</a>
+    </div>
+    <!-- Footer Section -->
+    <div class="first-footer">
+        <div class="footer-images">
+            <img src="photo/logo.jpg" class="images-footer" alt="Footer Image">
+        </div>
+        <div class="footer-container">
+            <div class="link-partner">
+                <h3 class="title2" style="font-family: 'Gabriola', cursive; font-size: 24px; color: white;">Contact Info
+                </h3>
+                <li class="list-links">(+243)814626370</li>
+                <li class="list-links">(+243)997568776</li>
+            </div>
+            <div class="link-partner">
+                <h3 class="title3">
+                    <img src="photo/location.png" class="location-logo">
+                    <span class="location"
+                        style="font-family: 'Gabriola', cursive; font-size: 24px; color: white;">Location</span>
+                </h3>
+                <li class="list-links">Goma</li>
+                <li class="list-links">Bukavu</li>
+                <li class="list-links">Kalemie</li>
+            </div>
+            <div class="link-partner">
+                <h3 class="title4" style="font-family: 'Gabriola', cursive; font-size: 24px; color: #ffffff;">Social
+                    Media</h3>
+                <div class="logos">
+                    <li class="list-links">
+                        <img src="photo/instagram.png" class="instagram" />
+                        <a href="https://instagram.com/maison.ecal12?igshid=MzMyNGUyNmU2YQ==" target="_blank">
+                            <span class="instagram-text">Instagram</span>
+                        </a>
+                    </li>
+                    <li class="list-links">
+                        <img src="photo/twitter-remover.png" class="twitter" />
+                        <a href="https://twitter.com/MaisonEcal?t=djST5JaWdC1vj1T97qX2gg&s=09" target="_blank">
+                            <span class="instagram-text">Twitter</span>
+                        </a>
+                    </li>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- <footer>
+        <p>&copy; 2023 Maison Ecal. All rights reserved.</p>
+        
+    </footer> -->
+    <script>
+
+        // Function to switch images in the about-us section every 4 seconds
+        let currentImageIndex = 0;
+        const images = document.querySelectorAll('.about-carousel img');
+
+        function switchImages() {
+            images[currentImageIndex].classList.remove('visible');
+            currentImageIndex = (currentImageIndex + 1) % images.length;
+            images[currentImageIndex].classList.add('visible');
+        }
+
+        setInterval(switchImages, 4000);
+
+        // Add animations to the mission and vision sections
+        const mission = document.querySelector('.mission');
+        const vision = document.querySelector('.vision');
+
+        window.addEventListener('scroll', () => {
+            const scrollPosition = window.scrollY;
+            const missionPosition = mission.offsetTop - window.innerHeight;
+            const visionPosition = vision.offsetTop - window.innerHeight;
+
+            if (scrollPosition >= missionPosition) {
+                mission.classList.add('animate');
+            } else {
+                mission.classList.remove('animate');
+            }
+
+            if (scrollPosition >= visionPosition) {
+                vision.classList.add('animate');
+            } else {
+                vision.classList.remove('animate');
+            }
+        });
+
+    </script>
+
+</body>
+
+</html>

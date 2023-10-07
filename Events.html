@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galerie Photo</title>
+    <link rel="stylesheet" href="style.css">
+   
+</head>
+<style>
+
+
+
+
+        /* Style de base */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+
+
+
+
+
+
+
+
+        /* Modify the navigation menu styles */
+.navigation {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    margin: 0; /* Remove default margin */
+}
+
+.navigation li {
+    margin-right: 20px;
+    font-weight: bold; /* Make the text bold */
+}
+
+/* Style the navigation links */
+.navigation a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s; /* Smooth color transition on hover */
+}
+
+.navigation a:hover {
+    color: #19cfe9; /* Change text color on hover */
+}
+
+
+/* Ajoutez une animation et une ligne de soulignement au lien */
+.more-info-link {
+    font-family: 'Gabriola', cursive;
+    font-size: 24px;
+    color: #000;
+    text-decoration: none; /* Supprimez le soulignement par défaut */
+    border-bottom: 2px solid transparent; /* Ajoutez une ligne de soulignement transparente */
+    transition: border-color 0.3s, color 0.3s; /* Ajoutez une transition pour la couleur et la couleur de la ligne de soulignement */
+}
+
+/* Au survol, changez la couleur du texte et de la ligne de soulignement */
+.more-info-link:hover {
+    color: #19cfe9; /* Changez la couleur du texte au survol */
+    border-color: #19cfe9; /* Changez la couleur de la ligne de soulignement au survol */
+}
+
+
+
+        
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .photo {
+            margin: 10px;
+            cursor: pointer;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .photo img {
+            width: 200px;
+            height: 150px;
+            object-fit: cover;
+            border: 1px solid #ccc;
+        }
+
+        .photo-title {
+            text-align: center;
+            margin-top: 10px;
+            font-weight: bold;
+            font-family: 'Gabriola', cursive;
+            font-size: 20px;
+        }
+
+        /* Style pour l'effet de zoom */
+        .photo-zoom:hover {
+            transform: scale(1.1);
+        }
+
+        /* Style pour la modal */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            padding-top: 50px;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.9);
+        }
+
+        .modal-content {
+            display: block;
+            margin: 0 auto;
+            max-width: 100%;
+            max-height: 80%;
+        }
+
+        .close {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            color: #ffffff;
+            font-size: 25px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .close:hover {
+            color: #ff0000;
+        }
+
+        .caption {
+            text-align: center;
+            color: #ffffff;
+            margin-top: 20px;
+            font-size: 20px;
+            font-family: 'Gabriola', cursive;
+        }
+
+        /* Ajout de styles pour les boutons "Next" et "Prev" */
+        .next, .prev {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 30px;
+            cursor: pointer;
+            color: white;
+        }
+
+        .next {
+            right: 10px;
+        }
+
+        .prev {
+            left: 10px;
+        }
+
+
+
+
+
+
+
+        /* Style for the logo container */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Adjust the gap between the image and text */
+}
+
+/* Style for the logo image */
+.logo img {
+    width: 100px; /* Adjust the width as needed */
+    height: 100px; /* Adjust the height as needed */
+    border-radius: 50%; /* Make the image round */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Add a subtle shadow */
+    transition: transform 0.3s ease-in-out; /* Add a smooth scale transition */
+}
+
+/* Style for the logo image on hover */
+.logo img:hover {
+    transform: scale(1.1); /* Increase the size on hover */
+}
+
+
+
+
+
+
+
+/* Style for the logo text */
+.logo span {
+    font-family: 'Gabriola', cursive;
+    font-size: 24px; /* Adjust the font size as needed */
+    color: white; /* Text color */
+    opacity: 0; /* Initially make the text transparent */
+    animation: slide-in 1s ease-in-out forwards; /* Define the animation */
+}
+
+/* Keyframes animation for sliding in the text */
+@keyframes slide-in {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+
+
+
+
+
+
+</style>
+<body>
+
+
+
+
+        <header>
+            <div class="logo">
+                <img src="photo/logo1.jpg" alt="Logo">
+                <span>Maison ECAL</span>
+            </div>
+        
+            <div class="group">
+                <ul class="navigation">
+                    <li><a href="Home.html">Home</a></li>
+                    <li><a href="Portfolio.html">Portfolio</a></li>
+                    <li><a href="About.html">About</a></li>
+                    <li><a href="Education.html">Education</a></li>
+                    <li><a href="Engcours.html">Courses</a></li>
+                    <li><a href="Experience.html">Professional Experience</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
+                </ul>
+        
+        </header>
+        <section class="main-content">
+            <h1 style="font-family: 'Gabriola', cursive; font-size: 44px; color: rgb(0, 0, 0);"> Some Events :</h1>
+            <div class="content">
+    <div class="gallery">
+        <div class="photo">
+            <img src="photo/G1.png" alt="Photo 1" class="photo-zoom">
+            <div class="photo-title">Photo from logistics training in Oslo</div>
+        </div>
+        <div class="photo">
+           
+            <img src="photo/G2.png" alt="Photo 2" class="photo-zoom">
+            <div class="photo-title" style="    margin-bottom: 30px;">Photo at the closing ceremony of <p>the Management and </p><p>Leadership training course organized </p><p>by the
+                AMADI Institute</p></div>
+        </div>
+        <div class="photo">
+            <img src="photo/G10.png" alt="Photo 3" class="photo-zoom">
+            <div class="photo-title">Photo from logistics training in Oslo</div>
+        </div>
+        <div class="photo">
+            <img src="photo/G11.png" alt="Photo 4" class="photo-zoom">
+            <div class="photo-title">Photo from logistics training in Oslo
+</div>
+        </div>
+        <div class="photo">
+            <img src="photo/G8.png" alt="Photo 5" class="photo-zoom">
+            <div class="photo-title">Photo from logistics training in Oslo</div>
+        </div>
+        <div class="photo">
+            <img src="photo/G7.png" alt="Photo 6" class="photo-zoom">
+            <div class="photo-title" style="margin-bottom: 30px;">Photo taken during Agresso procurement<p> training provided </p><p>by the Norwegian Refugee Council.</p></div>
+        </div>
+        <div class="photo">
+            <img src="photo/G3.png" alt="Photo 7" class="photo-zoom">
+            <div class="photo-title" style="margin-bottom: 30px;">Photo at the closing ceremony <p>of the Management</p><p> and Leadership training course organized </p><p>by the AMADI Institute.</p></div>
+        </div>
+        <div class="photo">
+            <img src="photo/G4.png" alt="Photo 8" class="photo-zoom">
+            <div class="photo-title" style="margin-bottom: 30px;">Photo at the presentation<p> of the certificate for the Management</p><p> and Leadership training provided</p><p> by the AMADI Institute.</p></div>
+        </div>
+        <div class="photo">
+            <img src="photo/G5.png" alt="Photo 9" class="photo-zoom">
+            <div class="photo-title">Photo at the closing ceremony <p>of the Management </p><p>and Leadership training course organized </p><p>by the AMADI Institute</p></div>
+        </div>
+    </div>
+<!-- Ajoutez les boutons "Next" et "Prev" dans la modal -->
+<div id="myModal" class="modal">
+    <span class="close">&times;</span>
+    <span class="prev">&#10094;</span>
+    <img class="modal-content" id="modalImage">
+    <span class="next">&#10095;</span>
+    <div id="caption" class="caption"></div>
+</div>
+
+
+<div class="mtn">
+    <a href="Evenement.html" class="more-info-link"
+        style="font-family: 'Gabriola', cursive; font-size: 24px; color: #000;">Lire en Francais</a>
+</div>
+
+
+<!-- Footer Section -->
+<div class="first-footer">
+    <div class="footer-images">
+        <img src="photo/logo1.jpg" class="images-footer" alt="Footer Image">
+    </div>
+    <div class="footer-container">
+        <div class="link-partner">
+            <h3 class="title2">Contact Info</h3>
+            <li class="list-links">(+243)814626370</li>
+            <li class="list-links">(+243)997568776</li>
+        </div>
+        <div class="link-partner">
+            <h3 class="title3">
+                <img src="photo/location.png" class="location-logo">
+                <span class="location">Location</span>
+            </h3>
+            <li class="list-links">Bukavu</li>
+            <li class="list-links">Goma</li>
+            <li class="list-links">Kalemie</li>
+        </div>
+        <div class="link-partner">
+            <h3 class="title4">Social Media</h3>
+            <div class="logos">
+                <li class="list-links">
+                    <img src="photo/instagram.png" class="instagram" />
+                    <a href="https://instagram.com/maison.ecal12?igshid=MzMyNGUyNmU2YQ==" target="_blank">
+                        <span class="instagram-text">Instagram</span>
+                    </a>
+                </li>
+                <li class="list-links">
+                    <img src="photo/twitter-remover.png" class="twitter" />
+                    <a href="https://twitter.com/MaisonEcal?t=djST5JaWdC1vj1T97qX2gg&s=09" target="_blank">
+                        <span class="instagram-text">Twitter</span>
+                    </a>
+                </li>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2023 Maison Ecal. All rights reserved.</p>
+    <!-- Add links to social media profiles, etc. here -->
+</footer>
+
+
+
+
+
+    <script>
+
+       // Récupération des éléments HTML
+        const modal = document.getElementById("myModal");
+        const modalImage = document.getElementById("modalImage");
+        const captionText = document.getElementById("caption");
+        const photos = document.querySelectorAll(".photo");
+        const prevButton = document.querySelector(".prev");
+        const nextButton = document.querySelector(".next");
+
+        let currentPhotoIndex = 0;
+
+        // Fonction pour afficher la modal avec une photo
+        function displayModal(index) {
+            modal.style.display = "block";
+            modalImage.src = photos[index].querySelector("img").src;
+            captionText.innerText = photos[index].querySelector("h3").innerText;
+            currentPhotoIndex = index;
+        }
+
+        // Ajout d'un gestionnaire d'événement pour chaque photo
+        photos.forEach((photo, index) => {
+            photo.addEventListener("click", () => {
+                displayModal(index);
+            });
+        });
+
+        // Gestionnaire d'événement pour le bouton "Next"
+        nextButton.addEventListener("click", () => {
+            currentPhotoIndex++;
+            if (currentPhotoIndex >= photos.length) {
+                currentPhotoIndex = 0;
+            }
+            displayModal(currentPhotoIndex);
+        });
+
+        // Gestionnaire d'événement pour le bouton "Prev"
+        prevButton.addEventListener("click", () => {
+            currentPhotoIndex--;
+            if (currentPhotoIndex < 0) {
+                currentPhotoIndex = photos.length - 1;
+            }
+            displayModal(currentPhotoIndex);
+        });
+
+        // Gestionnaire d'événement pour fermer la modal
+        modal.querySelector(".close").addEventListener("click", () => {
+            modal.style.display = "none";
+        });
+
+        // Gestionnaire d'événement pour fermer la modal en cliquant à l'extérieur
+        window.addEventListener("click", (event) => {
+            if (event.target === modal) {
+                modal.style.display = "none";
+            }
+        });
+    // Fonction pour afficher la modal avec une photo
+    function displayModal(index) {
+        modal.style.display = "block";
+        modalImage.src = photos[index].querySelector("img").src;
+        captionText.innerText = photos[index].querySelector("h3").innerText;
+        currentPhotoIndex = index;
+    }
+
+    // ...
+
+    // Gestionnaire d'événement pour afficher le titre sous l'image agrandie
+    modalImage.addEventListener("load", () => {
+        const caption = modal.querySelector(".caption");
+        caption.innerText = photos[currentPhotoIndex].querySelector("h3").innerText;
+    });
+
+    </script>
+</body>
+
+</html>

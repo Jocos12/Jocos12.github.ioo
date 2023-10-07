@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Ghislain</title>
+   <link rel="stylesheet" href="About.css">
+</head>
+<style>
+
+
+    /* Global CSS styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-img {
+    max-width: 100px;
+    max-height: 100px;
+}
+
+.logo-text {
+    font-size: 18px;
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+.group {
+    margin-right: 20px;
+}
+
+.navigation {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+.links-text {
+    text-decoration: none;
+    color: white;
+    margin-right: 20px;
+    transition: color 0.3s;
+}
+
+.links-text:hover {
+    color: blue;
+    text-decoration: underline;
+}
+
+/* Add more global styles as needed */
+
+/* About section specific styles */
+.about-section {
+    padding: 50px;
+    background-color:#00bbff;
+    color: white;
+}
+
+.about-content h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.ghislain-info {
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+}
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.social-links {
+    margin: 10px 0;
+}
+
+.social-link {
+    margin: 0 10px;
+    text-decoration: none;
+    color: white;
+}
+
+/* Add more styles as needed */
+/* Apply a font family and size to the entire section */
+.about-section {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Style the heading */
+.about-content h2 {
+    font-family: "Helvetica Neue", sans-serif;
+    font-size: 24px;
+    color: white; /* Change the color to your preference */
+    margin-bottom: 10px; /* Add space below the heading */
+}
+
+/* Style the paragraph text */
+.about-content p {
+    font-family: Georgia, serif;
+    font-size: 18px;
+    color: #000; /* Change the color to your preference */
+    margin-bottom: 20px; /* Add space below the paragraph */
+}
+
+/* Add a subtle animation to the paragraph */
+
+
+
+
+   
+
+/* Services Page Styles */
+.services-container {
+    padding: 20px;
+    background-color: #0f7276;
+    font-family: 'Poppins', sans-serif;
+    text-align: justify;
+    line-height: 1.6;
+     display: flex; /* Center horizontally and vertically */
+    flex-direction: column; /* Align text in the center vertically */
+    align-items: center; /* Align text in the center horizontally */
+    justify-content: center;
+    color: #ffffff;
+        /* White text color */
+}
+
+
+
+    .animate-fade-in {
+        
+        transform: translateY(20px); /* Move it down 20px */
+        transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out; /* Add animation transitions */
+    }
+
+    /* When the element is in view, animate it */
+    .animate-fade-in.animate-visible {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+
+/* Styles pour le texte "Maison ECAL" */
+.logo-text {
+    font-size: 24px; /* Augmentez la taille de la police */
+    font-weight: bold;
+    /* Supprimez la propriété d'animation */
+    opacity: 1; /* Assurez-vous que le texte est toujours visible */
+    transform: translateY(0); /* Assurez-vous que le texte ne se déplace pas après l'animation */
+}
+
+/* Personnalisez la famille de polices et d'autres propriétés de la police */
+.logo-text {
+    font-family: "Helvetica Neue", sans-serif; /* Utilisez la famille de polices de votre choix */
+    color: #fff; /* Couleur du texte */
+    text-transform: uppercase; /* Convertissez le texte en majuscules */
+    letter-spacing: 2px; /* Ajustez l'espacement des lettres pour une meilleure lisibilité */
+}
+
+
+
+
+
+
+
+/* CSS for social links */
+.social-links {
+    margin: 10px 0;
+    text-align: center; /* Center align the social links */
+}
+
+.social-link {
+    text-decoration: none;
+    color: #333; /* Change the color to your preference */
+    margin: 0 20px; /* Add some horizontal spacing between links */
+    display: inline-block; /* Display links in a line */
+
+    /* Add hover animation */
+    transition: transform 0.2s ease-in-out;
+}
+
+/* Style the social media icons (images) */
+.social-icon {
+    width: 30px; /* Decrease the size of the images as needed */
+    height: 30px; /* Decrease the size of the images as needed */
+    vertical-align: middle; /* Align the images vertically in the middle */
+    margin-right: 5px; /* Add some spacing between the image and text */
+}
+
+/* Add hover effect to the social links */
+.social-link:hover {
+    color: #007bff; /* Change color on hover, e.g., to blue */
+    transform: scale(1.2); /* Increase size on hover */
+}
+
+
+</style>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="photo/logo1.jpg" alt="Maison ECAL" class="logo-img"></a>
+            
+            <span class="logo-text">Maison ECAL&Divers</span>
+        </div>
+        <div class="group">
+            <ul class="navigation">
+                <li><a href="index.html" class="links-text">Home</a></li>
+                <li><a href="portfolio.html" class="links-text" data-section="about">Portfolio</a></li>
+                <li><a href="AboutPortfolio.html" class="links-text" data-section="about">About</a></li>
+                <li><a href="Education.html" class="links-text" data-section="services">Education</a></li>
+                <li><a href="Experience.html" class="links-text" data-section="about">Professional Experience</a></li>
+                <li><a href="Skills.html" class="links-text">Courses</a></li>
+                <li><a href="Contact.html" class="links-text" data-section="contact">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+<section class="about-section">
+    <div class="about-content">
+        <h2>About Ghislain Kisamba</h2>
+        <div class="services-container">
+    <p class="animate-fade-in ">Ghislain is a logistics professional with a degree in International Solidarity Logistics from Institut
+            Bioforce in
+            France. Furthermore, he is certified in Management and Leadership, as well as in Humanitarian Project Design
+            and
+            Management, all obtained in France.<br> His impressive professional career spans  more than 8 years
+            as a
+            Logistics Manager, where he offered his expertise to the Norwegian Refugee Council Mission in Niger,
+            Cameroon, the DRC,
+            and other countries.</p>
+
+
+        <p class="animate">  As a logistician, Ghislain demonstrates exceptional management of complexity, which is essential for
+            coordinating
+            logistics operations in sometimes challenging environments. He displays great flexibility in adapting
+            quickly to
+            unforeseen situations and emergencies, a crucial skill in the humanitarian field.<br></p>
+
+        <p class="animate"> His keen organizational sense allows him to efficiently manage stocks, supplies, and a team of human
+            resources while
+            maintaining the necessary structure. Ghislain is also an effective communicator, capable of coordinating
+            with other
+            teams, partners, and agencies to ensure the success of operations.<br>
+
+        His analytical skills enable him to make informed decisions by examining data, costs, timelines, and risks.
+            Additionally, he effectively manages stress related to emergency situations, which is essential for
+            maintaining
+            operational stability.</p>
+
+        <p class="animate"> With a strong technical knowledge of logistics tools, supply chain management systems, and regulations,
+            Ghislain ensures
+            that operations run smoothly. <br>He pays meticulous attention to detail to avoid costly errors, demonstrating
+            his
+            commitment to excellence in his field.<br>Finally, Ghislain maintains a strict adherence to ethics, crucial for managing precious resources dedicated
+            to
+            humanitarian missions.<br> His solid education and impressive career as a Logistics Coordinator reflect his
+            exceptional
+            contribution to the success of humanitarian operations across various African countries.</p>
+    </div>
+</section>
+
+<div class="mtn">
+    <a href="AproposGhis.html" class="more-info-link"
+        style="font-family: 'Gabriola', cursive; font-size: 24px; color: #5a0e0e;">Lire en Francais</a>
+</div>
+
+    <footer>
+        <div class="social-links">
+            <a href="https://instagram.com/maison.ecal12?igshid=MzMyNGUyNmU2YQ==" class="social-link">
+                <img src="photo/instagram.png" alt="Instagram" class="social-icon">
+                Instagram
+            </a>
+            <a href="https://twitter.com/MaisonEcal?t=djST5JaWdC1vj1T97qX2gg&s=09" class="social-link">
+                <img src="photo/twitter-remover.png" alt="Twitter" class="social-icon">
+                Twitter
+            </a>
+        </div>
+      
+        <p>&copy; 2023 Maison ECAL.Designed By Courbon</p>
+    </footer>
+
+   
+
+</body>
+
+</html>

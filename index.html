@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maison ECAL</title>
+    <link rel="stylesheet" href="styles.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.0/css/boxicons.min.css">
+</head>
+<style>
+
+
+/* CSS styles for the portfolio section */
+.portfolio {
+    background-color: white;
+    padding: 50px;
+}
+
+.portfolio h2 {
+    font-size: 36px;
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.portfolio-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.portfolio-item {
+    flex: 1;
+    padding: 20px;
+    animation: fadeInLeft 1s ease-in-out;
+}
+
+.portfolio-image {
+    max-width: 200%;
+    height: 300px;
+}
+
+.portfolio-description {
+    flex: 2;
+    padding: 20px;
+    background-color: white;
+    color: #0c0c0c;
+    border-radius: 5px;
+    animation: fadeInRight 1s ease-in-out;
+    margin-bottom: 50px;
+}
+
+/* Define animations */
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+
+
+
+/* Add an animation for enlarging the image on click */
+#enlargeImage:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+/* Add animations to paragraphs */
+.portfolio-paragraph {
+    animation: fadeInUp 1s ease-in-out;
+}
+
+/* Define the fadeInUp animation */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+
+
+
+
+.sub {
+display: block;
+    font-size: 20px;
+    font-weight: 70;
+    letter-spacing: 5px;
+    animation: moveInRight 4s ease-out;
+    text-shadow: 2px 2px 4px white;
+}
+
+
+
+
+
+.content p {
+    font-family: Arial, sans-serif; /* Change the font family */
+    font-size: 18px; /* Change the font size */
+}
+
+
+
+
+
+
+</style>
+<body>
+    <header>
+        
+        <a href="#" class="logo">
+            <img src="photo/logo1.jpg" alt="Ecal" class="logo-img">
+            <span class="sub" style="margin-bottom: 30px;"> Maison</span>
+            <span class="sub" >ECAL&Divers</span>
+           
+        </a>
+
+        <div class="group">
+            <ul class="navigation">
+                <li><a href="index.html" class="links-text">Accueil</a></li>
+                <li><a href="AproposDeNous.html" class="links-text" data-section="a-propos">A Propos</a></li>
+                <li><a href="services.html" class="links-text" data-section="nos-services">Nos Services</a></li>
+                <!-- <li><a href="#" class="nav-link" data-section="nos-partenaires">Nos Partenaires</a></li> -->
+                <li><a href="gallery.html" class="links-text">Galerie</a></li>
+                <!-- <li><a href="#" class="nav-link" data-section="temoignages">Temoignages</a></li> -->
+                <li><a href="contact.html" class="links-text" data-section="nous-contacter">Nous Contacter</a></li>
+            </ul>
+        <!-- <div class="search">
+            <span class="icon">
+                <i class="bx bx-search searchBtn" id="searchBtn"></i>
+                <i class="bx bx-x closeBtn" id="closeBtn"></i>
+            </span>
+        </div>
+        <div class="searchBox" id="searchBox">
+            <input type="text" id="searchInput" placeholder="Search...">
+        </div> -->
+    </header>
+
+    <div class="header-container">
+        
+            <!-- <img src="photo/as.jpg" alt="Background Image"> -->
+            <!-- Mettez ici le contenu spécifique à la page d'accueil -->
+            <div class="welcome-text">
+                <div class="welcome-text-center">
+                    <h1 class="heading-primary">
+                        <span class="heading-primary-main">Maison"ECAL"et Divers</span>
+                        <span class="heading-primary-sub">Etudes,Conseils et Assistance Logistique</span>
+                    </h1>
+                    <a href="AproposDeNous.html" class="btn btn-white btn-animated">ABOUT US</a>
+                </div>
+            </div>
+    </div>
+
+<h1 class="centered-text" id="OUR PARTNER" style="color: #0c0c0c;">
+    <marquee behavior="scroll" direction="left" scrollamount="10">
+        Welcome To Maison "ECAL" and Others
+    </marquee>
+</h1>
+
+<h1 class="centered-text" id="OUR PARTNER" style="color: black;">
+    <marquee behavior="scroll" direction="right" scrollamount="10">
+        Bienvenue à la Maison "ECAL" et Divers
+    </marquee>
+</h1>
+<section class="services wrapper">
+    <ul class="clearfix">
+        <li class="animated wow fadeInDown">
+            <img class="icon" src="photo/Picture1.png" alt="" />
+            <span class="separator"></span>
+            <div class="content">
+                <h2 style="font-family: 'Gabriola', cursive; font-size: 24px; color: #ff00bf;">Studies, Consulting and logistics Assistance & Others</h2>
+
+
+                <p><center>La Maison ECAL et Divers est spécialisée dans 
+                    les différentes </center>fonctions logistiques,
+                     elle vous appuiera en études,
+                conseils et assistances logistiques dans 
+                ces différentes tâches et vous ne serez jamais déçus pour son travail de
+                qualité.</p>
+                <p>Située à Goma, avec des extensions à Bukavu et à Kalemie, Maison ECAL vise à établir des partenariats durables avec nos
+                clients, fondés sur la confiance et la satisfaction totale, contribuant ainsi à leur réussite.</p>
+                
+                <p>Nous nous efforçons de collaborer étroitement avec nos clients, en leur fournissant des conseils éclairés et une
+                expertise logistique de haut niveau pour optimiser leurs opérations.</p>
+            </div>
+        </li>
+    </ul>
+
+<h7>
+  Some Courses and Programs : 
+</h7>
+<div class="mtn" style="color: rgb(240, 240, 240);">
+    
+    <br>
+    <p>- Approvisionnement</p>
+    <p>- Achat</p>
+    <p>- Gestion du parc équipement</p>
+    <p>- Communication</p>
+    <p>- etc</p>
+    <br>
+    <a href="courses.html" class="more-info-link">For more information</a>
+   
+</div>
+
+<section class="section portfolio" id="portfolio">
+    <h2>A propos de l'instructeur :</h2>
+    <div class="portfolio-content">
+        <div class="portfolio-item">
+            <img src="photo/G26.jpg" alt="Portfolio Item 1" class="portfolio-image" id="enlargeImage">
+        </div>
+        <div class="portfolio-description">
+            <p>Ghislain est un logisticien diplômé en Logistique internationale solidaire de l'Institut Bioforce en
+                France. 
+                De plus, il est certifié en Management and Leadership, ainsi qu'en Humanitarian Project Design
+                and Management, toujours en France. Sa carrière professionnelle impressionnante s'étend sur plus de 8 ans en tant que Manager Logistique, offrant son expertise à la Mission du Conseil Norvégien
+                pour les Réfugiés au Niger, au Cameroun, en RDC, et dans d'autres pays.</p>
+            <p>Pendant 7 ans, 1 mois et 13 jours, Ghislain a excellé en tant que Coordinateur Logistique au sein de
+                l'organisation non gouvernementale le Conseil Norvégien pour les Réfugiés (NRC), notamment pour la
+                Mission NRC dans plusieurs pays d'Afrique, dont la RDC, le Mali, la Tanzanie, etc. Sa contribution
+                exceptionnelle dans le domaine de la logistique a grandement contribué aux opérations humanitaires de
+                l'organisation.</p>
+                <p>De plus, il gère le stress lié aux situations d'urgence avec efficacité, ce qui est essentiel pour maintenir la
+                stabilité opérationnelle.
+                
+                Doté d'une solide connaissance technique des outils logistiques, des systèmes de gestion de la chaîne
+                d'approvisionnement, et des réglementations, Ghislain veille à ce que les opérations se déroulent sans accroc. Il porte
+                une attention minutieuse aux détails pour éviter des erreurs coûteuses, démontrant ainsi son engagement envers
+                l'excellence dans son domaine.
+                
+                Enfin, Ghislain maintient une adhésion stricte à l'éthique, essentielle pour la gestion des ressources précieuses
+                dédiées aux missions humanitaires. Son éducation solide et sa carrière impressionnante en tant que Coordinateur
+                Logistique témoignent de sa contribution exceptionnelle au succès des opérations humanitaires à travers divers pays
+                d'Afrique.</p>
+                <a href="portfolio.html" class="more-info-link">Pour plus d'information</a>
+        </div>
+    </div>
+</section>
+
+
+
+    
+<div class="first-footer">
+    <div class="footer-images">
+        <img src="photo/logo1.jpg" class="images-footer" alt="Footer Image">
+    </div>
+    <div class="footer-container">
+        <div class="link-partner">
+            <h3 class="title2" style="font-family: 'Gabriola', cursive; font-size: 24px; color: white;">Contact Info</h3>
+            
+            <li class="list-links">(+243)814626370</li>
+            <li class="list-links">(+243)997568776</li>
+        </div>
+        <div class="link-partner">
+            <h3 class="title3">
+                <img src="photo/location.png" class="location-logo">
+                <span class="location" style="font-family: 'Gabriola', cursive; font-size: 24px; color: white;">Location</span>
+            </h3>
+            <li class="list-links">Bukavu</li>
+            <li class="list-links">Goma</li>
+            <li class="list-links">Kalemie</li>
+        </div>
+        <div class="link-partner">
+            <h3 class="title4" style="font-family: 'Gabriola', cursive; font-size: 24px; color: #ffffff;">Social Media</h3>
+            <div class="logos">
+                <li class="list-links">
+                    <img src="photo/instagram.png" class="instagram" />
+                    <a href="https://instagram.com/maison.ecal12?igshid=MzMyNGUyNmU2YQ==" target="_blank">
+                        <span class="instagram-text" >Instagram</span>
+                    </a>
+                </li>
+                <li class="list-links">
+                    <img src="photo/twitter-remover.png" class="twitter" />
+                    <a href="https://twitter.com/MaisonEcal?t=djST5JaWdC1vj1T97qX2gg&s=09" target="_blank">
+                        <span class="instagram-text">Twitter</span>
+                    </a>
+                </li>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <!-- Pied de Page -->
+    <footer>
+        <p>&copy; 2023 Maison ECAL.Designed by Jocos,Tcha-Vei And Sharo</p>
+        <!-- Ajoutez ici des liens vers des profils de médias sociaux, etc. -->
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ionicons/5.15.0/ionicons.js"></script>
+    <script src="scripts.js"></script>
+</body>
+
+</html>

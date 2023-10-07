@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+    <!-- Additional CSS for Home page -->
+    <title>Ghislain's Portfolio</title>
+</head>
+<style>
+    /* Global CSS styles */
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #b1a7a7
+    }
+
+    header {
+        background-color: #555;
+        color: white;
+        padding: 10px 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    header:hover {
+    background-color: #000; /* Change to a darker color on hover */
+}
+
+    .logo {
+        text-decoration: none;
+        color: white;
+        font-size: 20px;
+        margin-left: 20px;
+    }
+
+    .logo-img {
+        max-width: 100px;
+    }
+
+    logo-text {
+    font-size: 18px; /* Adjust the font size as needed */
+    margin-left: 10px; /* Add margin to separate text from logo */
+    font-weight: bold;
+}
+    .group {
+        margin-right: 20px;
+    }
+
+    .navigation {
+        list-style: none;
+        padding: 0;
+        display: flex;
+    }
+
+  .links-text {
+    text-decoration: none;
+    color: white;
+    margin-right: 20px;
+    transition: color 0.3s, text-decoration-color 0.3s; /* Add transition properties */
+}
+
+.links-text:hover {
+    color: #19cfe9;; /* Change the text color to blue on hover */
+    text-decoration: underline #19cfe9;; /* Add blue underline on hover */
+}
+
+    /* Add more global styles as needed */
+    /* Home page specific CSS styles */
+    .home-section {
+        background-color:#19cfe9;
+        color: white;
+        text-align: center;
+        padding: 50px 0;
+    }
+
+    .home-content h1 {
+        font-size: 36px;
+        margin-bottom: 20px;
+    }
+
+    .contact-button {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #fff;
+        color: blue;
+        text-decoration: none;
+        font-weight: bold;
+        border-radius: 5px;
+        transition: background-color 0.3s, color 0.3s;
+    }
+
+    .contact-button:hover {
+        background-color: #19cfe9;
+        color: white;
+    }
+
+    .about-ghislain {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px;
+        background-color:white;
+    }
+
+    .ghislain-img {
+        max-width: 400px;
+        /* Increase image size */
+        border-radius: 5px;
+    }
+
+    .about-content {
+        flex: 1;
+        padding-left: 20px;
+        /* Add padding to the left of the content */
+    }
+
+    .social-links {
+        text-align: center;
+        margin: 20px 0;
+    }
+
+    .social-link {
+        margin: 0 10px;
+        text-decoration: none;
+        color: blue;
+    }
+
+    /* Add more home page specific styles as needed */
+
+    .contact-button {
+    /* Existing styles */
+    transition: background-color 0.3s, color 0.3s, transform 0.3s; /* Add transform property */
+}
+
+.contact-button:hover {
+    background-color: #19cfe9;
+    color: white;
+    transform: scale(1.05); /* Scale the button slightly on hover */
+}
+.ghislain-img {
+    /* Existing styles */
+    transition: transform 0.3s; /* Add transform property */
+}
+
+.ghislain-img:hover {
+    transform: scale(1.1); /* Zoom in the image on hover */
+}
+.social-link {
+    /* Existing styles */
+    transition: text-decoration 0.3s; /* Add text-decoration property */
+}
+
+.social-link:hover {
+    text-decoration: underline; /* Underline the link on hover */
+}
+
+  /* Define the animation */
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+
+
+    /* Apply the animation to the text */
+    .about-content p {
+        animation: fadeIn 5s ease-in-out; /* Adjust the duration and timing function as needed */
+    }
+
+    .more-info-link {
+    font-family: 'Gabriola', cursive;
+    font-size: 24px;
+    color: #ffffff;
+    transition: color 0.3s; /* Add a color transition */
+    text-decoration: none; /* Remove underline */
+}
+
+.more-info-link:hover {
+    text-decoration: underline #19cfe9;/* Add underline on hover */
+}
+
+.clicked {
+    color: blue !important; /* Change the color to blue when clicked */
+}
+
+</style>
+
+<body>
+    <header>
+    <a href="#" class="logo">
+        <img src="photo/logo1.jpg" alt="Maison ECAL" class="logo-img">
+        <span class="logo-text">Maison ECAL</span>
+    </a>
+
+        <div class="group">
+            <ul class="navigation">
+                <li><a href="index.html" class="links-text">Home</a></li>
+                <li><a href="AboutPortfolio.html"class="links-text" data-section="about">About</a></li>
+                <li><a href="Education.html" class="links-text" data-section="services">Education</a></li>
+                <li><a href="courses.html" class="links-text">Courses</a></li>
+                <li><a href="contact.html" class="links-text" data-section="contact">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <section class="home-section">
+        <div class="home-content">
+            <h1><marquee behavior="alternate">Welcome to Ghislain's Portfolio</marquee></h1>
+            <p>Ghislain is an accomplished professional in logistics and humanitarian work.</p>
+        </div>
+    </section>
+
+    <section class="about-ghislain">
+        <div class="about-content">
+            <img src="photo/G28.jpg" alt="Ghislain's Photo" class="ghislain-img">
+            <br>
+            <a href="courses.html" class="more-info-link"
+                style="font-family: 'Gabriola', cursive; font-size: 24px; color: #ffffff;">Lire en Francais</a>
+        </div>
+        <div class="about-content">
+        <h2>About Ghislain</h2>
+        <p style="font-family: Arial, sans-serif; line-height: 1.5;">
+            Ghislain is a dedicated logistics manager with a wealth of experience in various organizations. He is passionate
+            about making a difference in humanitarian efforts.
+        </p>
+        
+        <p style="font-family: Arial, sans-serif; line-height: 1.5;">
+            Ghislain Kisamba Shabani, armed with his education in International Solidarity Logistics from Institut
+            Bioforce-France and certifications in Management and Leadership, has dedicated a significant part of his life to an
+            exceptional professional career in the field of humanitarian logistics. 
+            <br>
+            <br>
+            With over 6 years of experience as a
+            Logistics Manager, notably within the Norwegian Refugee Council, he has demonstrated his ability to manage large
+            teams and ensure the efficient coordination of complex logistics operations.
+            <br><br>
+            Furthermore, his strong educational
+            background and diverse professional journey as a Logistics Coordinator and Logistics Officer reflect his unwavering
+            commitment to improving humanitarian operations and his enlightened leadership in this crucial field.
+        </p>
+
+            <a href="AboutPortfolio.html" class="contact-button">Read More</a>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <div class="first-footer">
+        <div class="footer-images">
+            <img src="photo/logo1.jpg" class="images-footer" alt="Footer Image">
+        </div>
+        <div class="footer-container">
+            <div class="link-partner">
+                <h3 class="title2">Contact Info</h3>
+                <li class="list-links">(+243)814626370</li>
+                <li class="list-links">(+243)997568776</li>
+            </div>
+            <div class="link-partner">
+                <h3 class="title3">
+                    <img src="photo/location.png" class="location-logo">
+                    <span class="location">Location</span>
+                </h3>
+                <li class="list-links">Your Location Address</li>
+            </div>
+            <div class="link-partner">
+                <h3 class="title4">Social Media</h3>
+                <div class="logos">
+                    <li class="list-links">
+                        <img src="photo/instagram.png" class="instagram" />
+                        <a href="https://instagram.com/your-instagram" target="_blank">
+                            <span class="instagram-text">Instagram</span>
+                        </a>
+                    </li>
+                    <li class="list-links">
+                        <img src="photo/twitter-remover.png" class="twitter" />
+                        <a href="https://twitter.com/your-twitter" target="_blank">
+                            <span class="instagram-text">Twitter</span>
+                        </a>
+                    </li>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <p>&copy; 2023 Maison Ecal. All rights reserved.</p>
+        <!-- Add links to social media profiles, etc. here -->
+    </footer>
+
+
+  
+
+</body>
+
+</html>

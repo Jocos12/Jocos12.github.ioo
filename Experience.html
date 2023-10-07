@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Experience</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+   /* Reset some default styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+   
+}
+
+/* Header Styles */
+header {
+    
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    width: 100px;
+    height: auto;
+}
+
+.logo span {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Global CSS styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1a0e0e
+}
+
+header {
+    background-color: #19cfe9;
+    color: white;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s; /* Add transition for background color change */
+}
+
+header:hover {
+    background-color: #555; /* Change to a darker color on hover */
+}
+
+.logo {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.logo-img {
+    max-width: 100px;
+}
+
+.logo-text {
+    font-size: 18px; /* Adjust the font size as needed */
+    margin-left: 10px; /* Add margin to separate text from logo */
+    font-weight: bold;
+}
+
+ .group {
+        margin-right: 20px;
+    }
+
+    .navigation {
+        list-style: none;
+        padding: 0;
+        display: flex;
+    }
+
+.links-text {
+    text-decoration: none;
+    color: white;
+    margin-right: 20px;
+    transition: color 0.3s, text-decoration-color 0.3s; /* Add transition properties */
+}
+
+.links-text:hover {
+    color: blue; /* Change the text color to blue on hover */
+    text-decoration: underline blue; /* Add blue underline on hover */
+}
+
+/* Main Content Styles */
+.main-content {
+    padding: 50px;
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Gabriola', cursive;
+    font-size: 44px;
+    color: #333;
+    background-color: #fff;
+    padding: 10px;
+    text-align: center;
+    border-bottom: 2px solid #333;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.experience {
+    width: 800%;
+    margin: 0 auto; /* Center-align the experience section */
+    text-align: justify;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    background-color: #f9f9f9;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 1s ease-in-out;
+    font-family: 'Arial', sans-serif; /* Change the font family */
+    font-size: 16px; /* Change the font size */
+}
+
+/* Animation personnalisée */
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateX(-20px); /* Animation de translation horizontale */
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Appliquez l'animation aux paragraphes dans la classe .experience */
+.experience p {
+    animation: slideIn 5s ease-in-out;/* Utilisez votre animation personnalisée */
+    margin-bottom: 30px;
+}
+
+
+
+/* Image G10 Styles */
+img[src="photo/G10.png"] {
+    float: left;
+    width: 200px;
+    margin-right: 20px;
+    margin-top: 20px; /* Adjust the margin to center the image */
+}
+
+/* Add a hover effect to the G10 image */
+img[src="photo/G10.png"]:hover {
+    transform: scale(1.1); /* Scale up the image on hover */
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Add a read in English link style */
+.more-info-link {
+    font-family: 'Gabriola', cursive;
+    font-size: 24px;
+    color: #333; /* Set the link color */
+    text-decoration: none; /* Remove underlines from links */
+}
+
+
+
+
+
+
+
+/* Footer Section Styles */
+.first-footer {
+    background-color:#0f7276; /* Footer background color */
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-images img {
+    max-width: 100px;
+    height: auto;
+}
+
+.link-partner {
+    margin-top: 20px;
+}
+
+.title2, .title3, .title4 {
+    font-size: 24px;
+    font-family: 'Gabriola', cursive;
+}
+
+.list-links {
+    list-style: none;
+    font-size: 18px;
+}
+
+.location-logo {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+/* Social Media Icons Styles */
+.logos {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.logos img {
+    width: 30px;
+    height: 30px;
+    margin: 0 10px;
+}
+
+.instagram, .twitter {
+    filter: invert(1); /* Invert the icon colors (white icons on dark background) */
+    transition: filter 0.3s ease;
+}
+
+.instagram:hover, .twitter:hover {
+    filter: invert(0); /* Revert to original colors on hover */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Footer Animation */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+/* Modify the navigation menu styles */
+.navigation {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    margin: 0; /* Remove default margin */
+}
+
+.navigation li {
+    margin-right: 20px;
+    font-weight: bold; /* Make the text bold */
+}
+
+/* Style the navigation links */
+.navigation a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s; /* Smooth color transition on hover */
+}
+
+.navigation a:hover {
+    color: #19cfe9; /* Change text color on hover */
+}
+
+
+/* Ajoutez une animation et une ligne de soulignement au lien */
+.more-info-link {
+    font-family: 'Gabriola', cursive;
+    font-size: 24px;
+    color: #000;
+    text-decoration: none; /* Supprimez le soulignement par défaut */
+    border-bottom: 2px solid transparent; /* Ajoutez une ligne de soulignement transparente */
+    transition: border-color 0.3s, color 0.3s; /* Ajoutez une transition pour la couleur et la couleur de la ligne de soulignement */
+}
+
+/* Au survol, changez la couleur du texte et de la ligne de soulignement */
+.more-info-link:hover {
+    color: #00ff00; /* Changez la couleur du texte au survol */
+    border-color: #00ff00; /* Changez la couleur de la ligne de soulignement au survol */
+}
+
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="photo/logo1.jpg" alt="Logo">
+            <span>Maison ECAL</span>
+        </div>
+        
+            <div class="group">
+                <ul class="navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="EngAbout.html">About</a></li>
+                <li><a href="Education.html">Education</a></li>
+                <li><a href="Engcours.html">Courses</a></li>
+                <li><a href="Experience.html">Professional Experience</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        
+    </header>
+<section class="main-content">
+    <h1 style="font-family: 'Gabriola', cursive; font-size: 44px; color: rgb(0, 0, 0);"> Professional Experience :</h1>
+    <div class="content">
+       
+        <div class="experience">
+            <p>- 6 years and 1 month and 18 days experience as Logistics Manager:
+            
+            Logistic Support to the Mission of the Norwegian Refugee Council in Niger for one month as Logistic Manager from June 1
+            to July 1, 2023.
+            
+            Logistic Support to the Mission of the Norwegian Refugee Council in Cameroon as Logistic Manager from May to June 2023.
+            
+            
+            From July 1, 2017 to June 30, 2023: Logistics Manager at the Norwegian Refugee Council, NRC in acronym, for the NRC
+            DRCongo Mission where I managed more than 85 staffs in 5 Areas in the Mission.
+            
+            
+            From May 13 to June 30, 2017 - Interim Logistics Manager at the non-governmental organization the Norwegian Refugee
+            Council, NRC in acronym for Mission NRC DRCongo.
+            </p>
+            <p>
+            - 7 years and 1 month and 13 days of experience as Logistics Coordinator:
+            
+            From September 1, 2014 to May 13, 2017 - National Logistics Coordinator at the non-governmental organization the
+            Norwegian Refugee Council, NRC in acronym for Mission NRC DRCongo.
+            
+            
+            March 1, 2009 to August 31, 2014: - Logistics Coordinator for the Field Office of the Norwegian Refugee Council, NRC in
+            acronym, for South Kivu in Bukavu under an open-ended contract: coordinate logistical support for the operation of the
+            Bukavu Office and the Baraka sub-office within the framework of local supplies, supplier quotations, sub-regional
+            orders, management of product/material/supply depots, management of the vehicle cartage, implementation of passive
+            safety measures and in all logistical activities. Manager of a team of 2 Logistics Officers, a Mechanic, two Mechanic
+            Assistants, two Warehousemen, an IT Officer, a Log Movement, a Radio Operator, a Log Secretary/Admin, 12 light vehicle
+            drivers, 6 truck drivers including 4 Mercedes and 2 Fuso and 21 motorcycles assigned to the various departments
+            including 11 TF125 motorcycles and 10 DT125 Yamaha motorcycles and 4 generators.
+            
+            
+            March 15 - April 14, 2013 - Sent to Bamako, Mali, to open the Mission of the Norwegian
+            Council for Refugees in Mali.
+            
+            </p>
+            <p>
+            - 1 year and 5 months experience as Logistics Officer:
+            
+            From September 1, 2007 to February 28, 2009: - Logistics Officer at the Norwegian Refugee Council (NRC), a
+            non-governmental organization based in Moba, Katanga: Provide logistical support for office operations, local
+            procurement, supplier quotations, local orders, management of product/material/supply depots, management of the vehicle
+            cart, implementation of passive safety measures and all logistical activities. Manager of a team of 2 Assistant
+            Logisticians (Purchasing and Cargo), a Logistics Secretary, a Storekeeper, an Assistant Mechanic and 6 drivers,
+            including 3 for light vehicles and 3 for Mercedes Trucks, and 10 motorcycles assigned to the various departments.
+            
+            </p>
+        <p>
+            - 1 year and 5 months experience as Logistics Assistant:
+            
+            
+            March 1, 2006 to August 31, 2007: - Assistant Purchasing Logistician with the Norwegian non-governmental organization
+            NRC in Kalemie and Moba in Katanga, in charge of local purchasing, managing the movement of material shipments in the
+            field and cross-border purchasing in Kigoma/Tanzania.
+            
+        </p>
+            <p>- 18 years and 8 months' experience as a Logistician in a private company:
+            
+            From April 23, 1988 to 2006: - Purchasing Office Manager at the current Ciment-Lacs Interlacs, in charge of supervising
+            supplies (local and foreign purchases) and customs declarations for the Company's imports. Then carry out the
+            pre-valuation of purchased items, the justification of accounts along the way as part of stock management with the
+            accounts department. Managed an office of six people, including an assistant, three purchasing clerks and two stock
+            handlers.
+            
+            November 1978 to April 1988: Responsible for local purchasing, contact with the Maritime department for the departure
+            and arrival of the 20-ton, 50-passenger ship Moliro.</p>
+
+        </div>
+    </div>
+
+<div class="mtn">
+    <a href="Professional.html" class="more-info-link"
+        style="font-family: 'Gabriola', cursive; font-size: 24px; color: white;">Lire En Francais</a>
+</div>
+
+
+<!-- Footer Section -->
+<div class="first-footer">
+    <div class="footer-images">
+        <img src="photo/logo1.jpg" class="images-footer" alt="Footer Image">
+    </div>
+    <div class="footer-container">
+        <div class="link-partner">
+            <h3 class="title2">Contact Info</h3>
+            <li class="list-links">(+243)814626370</li>
+            <li class="list-links">(+243)997568776</li>
+        </div>
+        <div class="link-partner">
+            <h3 class="title3">
+                <img src="photo/location.png" class="location-logo">
+                <span class="location">Location</span>
+            </h3>
+            <li class="list-links">Goma</li>
+            <li class="list-links">Bukavu</li>
+            <li class="list-links">Kalemie</li>
+        </div>
+        <div class="link-partner">
+            <h3 class="title4">Social Media</h3>
+            <div class="logos">
+                <li class="list-links">
+                    <img src="photo/instagram.png" class="instagram" />
+                    <a href="https://instagram.com/maison.ecal12?igshid=MzMyNGUyNmU2YQ==" target="_blank">
+                        <span class="instagram-text">Instagram</span>
+                    </a>
+                </li>
+                <li class="list-links">
+                    <img src="photo/twitter-remover.png" class="twitter" />
+                    <a href="https://twitter.com/MaisonEcal?t=djST5JaWdC1vj1T97qX2gg&s=09" target="_blank">
+                        <span class="instagram-text">Twitter</span>
+                    </a>
+                </li>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2023 Maison Ecal. Designed By Jocos.</p>
+    <!-- Add links to social media profiles, etc. here -->
+</footer>
+</body>
+
+</html>

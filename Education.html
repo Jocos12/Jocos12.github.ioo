@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education</title>
+    <style>
+        /* Reset some default styles */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Header Styles */
+        header {
+            background-color: #333;
+            color: #fff;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo img {
+            width: 60px;
+            height: auto;
+            margin-right: 10px;
+        }
+
+        .logo span {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        /* Main Content Styles */
+        .main-content {
+            text-align: center;
+            padding: 50px;
+        }
+
+        h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        .content-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .text-container,
+        .list-container {
+            padding: 20px;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Apply styles on hover */
+        nav ul li:hover {
+            opacity: 0.7;
+        }
+
+        nav ul li a:hover {
+            color: #ff8c00;
+        }
+
+        nav ul li a:visited {
+            text-decoration: underline red;
+        }
+
+        /* Add spacing between list items */
+        .list-container ul li {
+            margin-bottom: 30px;
+            opacity: 0;
+        }
+
+        /* Keyframe animations */
+        @keyframes fade-in {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+
+        /* Delayed animation for list items */
+        .list-container ul li:nth-child(1) {
+            animation: fade-in 1s ease-in-out forwards;
+            animation-delay: 2s;
+        }
+        .list-container ul li:nth-child(2) {
+            animation: fade-in 1s ease-in-out forwards;
+            animation-delay: 4s;
+        }
+
+        .list-container ul li:nth-child(3) {
+            animation: fade-in 1s ease-in-out forwards;
+            animation-delay: 6s;
+        }
+
+        .list-container ul li:nth-child(4) {
+            animation: fade-in 1s ease-in-out forwards;
+            animation-delay: 8s;
+        }
+
+        .list-container ul li:nth-child(5) {
+            animation: fade-in 1s ease-in-out forwards;
+            animation-delay: 10s;
+        }
+
+        .list-container ul li:nth-child(6) {
+            animation: fade-in 1s ease-in-out forwards;
+            animation-delay: 12s;
+        }
+
+        .list-container ul li:nth-child(7) {
+            animation: fade-in 1s ease-in-out forwards;
+            animation-delay: 14s;
+        }
+
+        /* Services Page Styles */
+.services-container {
+    padding: 20px;
+    background-color: #0f7276;
+    font-family: 'Poppins', sans-serif;
+    text-align: justify;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff; /* White text color */
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.social-icons {
+    margin-top: 20px; /* Add some space between the icons and the text */
+    display: flex;
+    justify-content: center; /* Center the icons horizontally */
+    align-items: center; /* Center the icons vertically */
+}
+
+.social-icons a {
+    text-decoration: none;
+    margin: 0 10px; /* Add some space between the icons */
+    color: #fff;
+    transition: color 0.3s ease-in-out;
+}
+
+.social-icons a img {
+    width: 32px; /* Adjust the width of the icons */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.social-icons a:hover {
+    color: #ff8c00; /* Change color on hover */
+}
+
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="photo/logo1.jpg" alt="Logo">
+            <span>Maison ECAL</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="Portfolio.html">Portfolio</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="Education.html">Education</a></li>
+                <li><a href="Engcours.html">Courses</a></li>
+                <li><a href="Experience.html">Professional Experience</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="main-content">
+        <h1>My Education:</h1>
+<div class="services-container"></div>
+        <div class="content-container">
+            <div class="text-container">
+                <p class="animated-text delayed">I hold the following certifications and have pursued education in
+                    various fields:</p>
+            </div>
+
+            <div class="list-container">
+                <ul>
+                    <li>Diploma in International Solidarity Logistics from Bioforce Institute - France</li>
+                    <li>Certified in Management and Leadership by Bioforce Institute - France</li>
+                    <li>Certified in humanitarian project design and management by Bioforce Institute - France
+                        E-learning</li>
+                    <li>Certified in Leadership and Management by MDF in Bujumbura</li>
+                    <li>Certified in Purchasing and Supply Chain Management by AMADI Institute</li>
+                    <li>Training in 4 x 4 driving by the Norwegian Refugee Council DRC</li>
+                    <li>Training on Anti-Corruption and Ethics Guide, Supply Chain,<br> Stock Management, Vehicle Fleet
+                        Management, Equipment Management, Telecommunication, IT Equipment, and Sat phone by Norwegian
+                        Refugee Council, NRC in acronym</li>
+                </ul>
+            </div>
+        </div>
+    <!-- </section>
+    <div class="social-icons">
+        <a href="https://www.instagram.com/your-instagram-profile" target="_blank">
+            <img src="photo/instagram.png" alt="Instagram">
+        </a>
+        <a href="https://twitter.com/your-twitter-profile" target="_blank">
+            <img src="photo/twitter-remover.png" alt="Twitter">
+        </a>
+    </div> -->
+    <br>
+    <br>
+<footer>
+
+    <p>&copy; 2023 Your Name. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

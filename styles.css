@@ -1,0 +1,775 @@
+Reset some default styles for better consistency across browsers * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Define basic styles for the body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0c0c0c;
+    color: white;
+    line-height: 1.6;
+}
+
+/* Style the header */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url('photo/log.jpg');
+    height: 100px;
+    border-top: 5px solid #ff00bf;
+    box-shadow: 10px 7px 40px rgb(54, 54, 54);
+}
+
+/* Style the logo */
+.logo {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+    
+}
+
+.logo img {
+    width: 70px;
+    height: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Style the navigation links */
+.navigation {
+    list-style: none;
+    display: flex;
+    margin-right: 20px;
+}
+
+.nav-link {
+    margin-right: 20px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #ff00bf;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Style the hero section */
+.header-container {
+    background-image: url('photo/phh1.jpeg');
+    /* Initial background image */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    text-align: center;
+    overflow-x: hidden;
+    font-family: "Poppins", sans-serif;
+    padding: 100px 0;
+    color: #fff;
+    margin: 0;
+    animation: rotateBackground 90s linear infinite;
+    /* 15 images x 4 seconds each = 60 seconds */
+    filter: brightness(0.7);
+    /* Adjust the brightness value as needed (0.7 for 70% brightness) */
+}
+
+@keyframes rotateBackground {
+    0% {
+        background-image: url('photo/G10.png');
+    }
+
+    7% {
+        background-image: url('photo/G8.png');
+    }
+
+    14% {
+        background-image: url('photo/G29.jpg');
+    }
+
+    21% {
+        background-image: url('photo/G31.jpg');
+    }
+
+    28% {
+        background-image: url('photo/img6.jpeg');
+    }
+
+    35% {
+        background-image: url('photo/img8.jpg');
+    }
+
+    42% {
+        background-image: url('photo/img2.jpeg');
+    }
+
+    49% {
+        background-image: url('photo/G26.jpg');
+    }
+
+    56% {
+        background-image: url('photo/img11.webp');
+    }
+
+    63% {
+        background-image: url('photo/img17.jpeg');
+    }
+
+    70% {
+        background-image: url('photo/back.jpeg');
+    }
+
+    77% {
+        background-image: url('photo/G1.png');
+    }
+
+    84% {
+        background-image: url('photo/img77.jpg');
+    }
+
+    91% {
+        background-image: url('photo/img1.jpg');
+    }
+
+    100% {
+        background-image: url('photo/img19.jpg');
+        /* Back to the first image */
+    }
+}
+
+
+/* Style the other sections */
+.a-propos,
+.nos-services,
+.nos-partenaires,
+.galerie,
+.temoignages,
+.nous-contacter {
+    padding: 40px;
+    background-color: #fff;
+    /* Add a white background to these sections for better readability */
+    color: #333;
+    /* Set text color to a dark color for contrast */
+}
+
+/* Style section headers */
+h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #007BFF;
+}
+
+/* Style footer */
+footer {
+    background-color: #007BFF;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Add styles for links and buttons */
+a,
+button {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 6px 20px;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: bold;
+   
+    transition: background-color 0.3s ease;
+}
+
+a:hover,
+button:hover {
+    background-color: #0056b3;
+}
+
+
+/* Style for the centered-text class */
+.centered-text {
+    text-align: center;
+}
+
+/* Style for the marquee text */
+marquee {
+    font-size: 24px;
+    /* Adjust font size as needed */
+    background-color: #fff;
+    /* Background color for better readability */
+    padding: 10px;
+    border: 2px solid #ccc;
+    /* Add a border for emphasis */
+    border-radius: 10px;
+    /* Rounded corners for the marquee */
+    white-space: nowrap;
+    /* Prevent text from wrapping */
+}
+
+
+
+
+
+
+.first-footer {
+    width: 100%;
+    height: 200px;
+    background-color: black;
+    display: flex;
+}
+
+
+
+.images-footer {
+    height: 200px;
+}
+
+.footer-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.link-partner {
+    margin: 90px 70px;
+    padding-right: 50px;
+    line-height: 2.1;
+}
+
+.footer-logo {
+    width: 100px;
+    background-color: #fff;
+    padding: 30px 19px;
+    border-radius: 50%;
+    transform: translateY(-40px);
+}
+
+.logos {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 0 10px;
+}
+
+.equite {
+    width: 80px;
+    height: 50px;
+}
+
+.bke {
+    width: 80px;
+    height: 50px;
+}
+
+.ime {
+    width: 80px;
+    height: 50px;
+}
+
+.location {
+    padding: 0 -5px;
+}
+
+
+
+.location-logo {
+    width: 20px;
+    transform: translateY(3px);
+    /* transform: translateX(-7px);   */
+}
+
+/* Adjust the inline Twitter and Instagram icons */
+.twitter,
+.instagram {
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+    /* Add some spacing between the icons */
+    vertical-align: middle;
+    /* Align icons vertically */
+    
+    
+}
+
+/* Style for Instagram and Twitter text */
+.instagram-text,
+.twitter-text {
+    color: #fff;
+    font-family: "Lato";
+    vertical-align: middle;
+    /* Align text vertically with icons */
+
+    background-color: #007BFF;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+        text-decoration: none;
+        font-weight: bold;
+        transition: background-color 0.3s ease;
+}
+/* .footer {
+    display: flex;
+    align-items: center;
+} */
+
+.title1,
+.title2,
+.title3,
+.title4 {
+    color: #3b3838;
+}
+
+.list-links {
+    list-style: none;
+    font-family: "lato";
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+
+h7 {
+   
+
+    text-align: center;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 24px;
+        /* Increase the font size */
+        font-weight: bold;
+        
+                margin-left: 80px;
+                /* Adjust the margin as needed to leave space on the left */
+            
+}
+
+.mtn {
+    width: 40%;
+    font-size: 23px;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #0c0c0c;
+    margin: 0 auto;
+    /* Center the container */
+    text-align: left;
+    /* Align text to the left */
+    padding: 20px;
+    /* Add some padding for spacing */
+}
+
+.mtn p {
+    margin-left: 3.5%;
+}
+
+a {
+    display: inline-block;
+    /* Make the link inline with other items */
+    margin-top: 10px;
+    /* Add some spacing between items */
+    text-decoration: none;
+    /* Remove underline from the link */
+    background-color: #007BFF;
+    /* Add a background color */
+    color: white;
+    /* Set text color to white */
+    padding: 5px 15px;
+    /* Add padding to the link */
+    border-radius: 5px;
+    margin-right: 10px;
+    /* Add rounded corners */
+}
+
+
+
+
+.more-info-link {
+    background-color: transparent;
+    /* Remove the background color */
+    color: #007BFF;
+    /* Set the text color to blue */
+    padding: 0;
+    /* Remove padding */
+    border: none;
+    /* Remove border */
+    text-decoration: underline;
+    /* Add underline to make it look clickable */
+    cursor: pointer;
+    /* Change cursor to a pointer on hover to indicate clickability */
+}
+
+.more-info-link:hover {
+    color: white;
+    /* Change text color on hover */
+}
+
+
+
+/* Header Styles */
+h1#OUR PARTNER {
+    font-size: 36px;
+    text-align: center;
+    background-color: #ff00bf;
+    color: #ffffff;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    /* Change the font family */
+    font-weight: bold;
+    /* Make the font bold */
+    opacity: 1;
+    /* Ensure full visibility, remove any transparency */
+}
+
+/* List Item Styles */
+li.animated {
+    list-style: none;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    /* Center the content horizontally */
+}
+
+li.animated img.icon {
+    max-width: 700px;
+    /* Increase the maximum width of the image */
+    margin-right: 20px;
+    /* Add some spacing between the image and text */
+}
+
+li.animated .content {
+    text-align: left;
+    /* Align text to the left */
+}
+
+li.animated h2 {
+    font-size: 28px;
+    /* Increase the font size for the heading */
+    color: #ff00bf;
+    font-family: 'Gabriola', cursive;
+    margin-top: 0;
+    /* Remove top margin to align with the image */
+    margin-bottom: 10px;
+    /* Add a bottom margin for spacing */
+    text-align: center;
+    /* Center the text horizontally within the container */
+}
+
+li.animated p {
+    font-size: 18px;
+    /* Increase the font size for the paragraph */
+    line-height: 1.5;
+    margin-top: 0;
+}
+
+/* Animation */
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+li.animated.wow {
+    animation: fadeInDown 0.5s ease-in-out;
+}
+
+
+
+
+  .centered-text {
+      text-align: center;
+  }
+
+  /* Style the h1 element */
+  .main-section-text {
+      color: #0c0c0c;
+  }
+
+
+
+
+
+
+  .btn:link,
+  .btn:visited {
+      text-transform: uppercase;
+      text-decoration: none;
+      padding: 15px 40px;
+      display: inline-block;
+      border-radius: 100px;
+      transition: all 0.2s;
+      position: relative;
+  }
+
+  .btn-white {
+      background-color: hsl(320, 31%, 50%);
+  }
+
+  .btn:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+
+  .btn:active {
+      transform: translateY(-1px);
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  }
+
+  .btn::after {
+      background: transparent;
+      content: "";
+      display: inline-block;
+      height: 100%;
+      width: 100%;
+      border-radius: 100px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      transition: all 0.4s;
+  }
+
+  .btn-white::after {
+      background-color: #5c51f7;
+  }
+
+  .btn:hover::after {
+      transform: scaleX(1.4) scaleY(1.6);
+      opacity: 0;
+  }
+
+  .btn-animated {
+      animation: moveButton 0.5s ease-out 0.75s;
+      animation-fill-mode: backwards;
+  }
+
+  @keyframes moveInLeft {
+      0% {
+          opacity: 0;
+          transform: translateX(-100px);
+      }
+
+      80% {
+          transform: translateX(10px);
+      }
+
+      100% {
+          opacity: 1;
+          transform: translate(0);
+      }
+  }
+
+  @keyframes moveInRight {
+      0% {
+          opacity: 0;
+          transform: translateX(100px);
+      }
+
+      80% {
+          transform: translateX(-10px);
+      }
+
+      100% {
+          opacity: 1;
+          transform: translate(0);
+      }
+  }
+
+  @keyframes moveButton {
+      0% {
+          opacity: 0;
+          transform: translateY(30px);
+      }
+
+      100% {
+          opacity: 1;
+          transform: translate(0);
+      }
+  }
+
+  @keyframes text-animation {
+      0% {
+          opacity: 0;
+          transform: translateX(100px);
+      }
+
+      80% {
+          transform: translateX(-10px);
+      }
+
+      100% {
+          opacity: 1;
+          transform: translate(0);
+      }
+  }
+
+  @keyframes moveinright {
+      0% {
+          opacity: 0;
+          transform: translateX(-100px);
+      }
+
+      80% {
+          transform: translateX(10px);
+      }
+
+      100% {
+          opacity: 1;
+          transform: translate(0);
+      }
+  }
+
+  @keyframes moveMotorcycle {
+      0% {
+          left: 0;
+      }
+
+      50% {
+          left: 50%;
+      }
+
+      100% {
+          left: 100%;
+      }
+  }
+
+
+
+
+
+
+
+
+
+
+ .heading-primary {
+     color: #0c0c0c;
+     text-transform: uppercase;
+     margin-bottom: 60px;
+     font-weight: bold;
+     /* Add this to make the text bold */
+     text-shadow: 2px 2px 4px white;
+     /* Add this to increase brightness with a shadow */
+ }
+  .heading-primary-main {
+    display: block;
+    font-size: 60px;
+    font-weight: 400;
+    letter-spacing: 20px;
+    animation-name: moveInLeft;
+    animation-duration: 3s;
+    animation-timing-function: ease-out;
+    text-shadow: 2px 2px 4px white;
+
+  /* animation-iteration-count: 2; */
+  /* animation-delay: 3s; */
+}
+.heading-primary-sub {
+display: block;
+    font-size: 20px;
+    font-weight: 70;
+    letter-spacing: 5px;
+    animation: moveInRight 4s ease-out;
+    text-shadow: 2px 2px 4px white;
+}
+
+
+
+.welcome-text {
+    text-transform: uppercase;
+    font-size: 30px;
+    font-family: trebuchet ms, sans-serif;
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: 11px;
+    animation: text-animation 2s ease-out;
+}
+
+
+
+
+/* Style the search icon */
+/* .search {
+    margin-right: 20px;
+    font-size: 24px;
+    cursor: pointer;
+    color: #fff;
+}
+
+.searchBtn:hover {
+    color: #ff00bf;
+} */
+
+/* Style the menu toggle icon */
+/* .menuToggle {
+    font-size: 24px;
+    cursor: pointer;
+    color: #fff;
+}
+
+.menuToggle:hover {
+    color: #ff00bf;
+} */
+
+/* Style the search box */
+/* .searchBox {
+    display: none;
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.searchBox input {
+    width: 200px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+} */

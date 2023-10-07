@@ -1,0 +1,291 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    font-family:'Poppins';
+    background-color: #1d0f5b;
+}
+
+/* Header styles */
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    width: 100px;
+    height: auto;
+}
+
+.navigation ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+.navigation li {
+    margin-right: 20px;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Image Carousel */
+.image-carousel {
+    position: relative;
+    width: 1350px; /* Adjust the carousel width as needed */
+    height: 700px; /* Adjust the carousel height as needed */
+    margin: 0 auto;
+    overflow: hidden; /* Hide overflow to crop images */
+}
+
+.image-carousel img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Maintain aspect ratio and cover container */
+    transition: opacity 0.5s ease-in-out; /* Smooth transition between images */
+    opacity: 0; /* Initially hidden */
+    left: 0;
+    filter: brightness(.4);
+}
+
+.image-carousel img:nth-child(1) {
+    opacity: 1; /* Display the first image initially */
+}
+
+/* Table styles */
+
+  /* Container styles to center the table */
+  .table-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Adjust the height as needed */
+}
+
+/* Table styles */
+table {
+    width: 80%;
+    border-collapse: collapse;
+    margin: 0 auto; /* Center the table horizontally */
+    margin-block: 30px 80px;
+}
+th {
+    background-color: #f2f2f2;
+    text-align: center; /* Center the text in th elements */
+    color: black; /* Set th text color to black */
+    padding: 10px;
+}
+td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 10px;
+    color: white; 
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: lightblue;
+}
+
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+.first-footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-images {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.images-footer {
+    width: 100px;
+    height: auto;
+}
+
+.footer-container {
+    flex: 3;
+    display: flex;
+    justify-content: space-between;
+}
+
+.link-partner {
+    flex: 1;
+}
+
+.title2, .title3, .title4 {
+    font-size: 18px;
+}
+
+.list-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-top: 10px;
+}
+
+.location-logo {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+.logos {
+    display: flex;
+    align-items: center;
+}
+
+.instagram, .twitter {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+.instagram-text, .twitter-text {
+    color: white;
+    text-decoration: none;
+}
+
+h2 {
+    color: #000;
+    text-align: center;
+}
+
+
+
+    /* Add your welcome message and animation styles here */
+    .welcome-message {
+        font-size: 24px;
+        text-align: center;
+        animation: fadeIn 2s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+
+          /* Styles pour centrer le texte au milieu de l'élément .image-carousel */
+          .image-carousel {
+            text-align: center;
+            position: relative; /* Position relative pour centrer le contenu */
+        }
+
+        .image-carousel h2 {
+            font-weight: 900;
+            font-size: 50px;
+            position: absolute; /* Position absolue pour centrer le texte au milieu */
+            top: 50%; /* Déplace le texte vers le haut de 50% de la hauteur de l'élément parent */
+            left: 10%;
+            transform: translateY(-50%); /* Ajuste la position verticale pour le centrer */
+            z-index: 1000;
+            width: 80%;
+        }
+
+
+
+
+
+
+.mtn {
+    width: 85%;
+    font-size: 23px;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: none;
+    margin: 0 auto;
+    /* Center the container */
+    text-align: left;
+    /* Align text to the left */
+    padding: 20px;
+    /* Add some padding for spacing */
+}
+
+.mtn p {
+    margin-left: 3.5%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+
+/* Services Page Styles */
+.services-container {
+    padding: 20px;
+    background-color: #0f7276;
+    font-family: 'Poppins', sans-serif;
+    text-align: justify;
+    line-height: 1.6;
+     display: flex; /* Center horizontally and vertically */
+    flex-direction: column; /* Align text in the center vertically */
+    align-items: center; /* Align text in the center horizontally */
+    justify-content: center;
+    color: #ffffff;
+        /* White text color */
+}
+
+.services-container h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #f1f1f1;
+    /* Couleur du titre */
+}
+
+.services-container p {
+    font-size: 18px;
+    margin-bottom: 15px;
+    opacity: 0;
+    /* Par défaut, les paragraphes sont transparents */
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+/* Classe pour activer l'animation */
+.services-container .animate {
+    opacity: 1;
+    transform: translateY(0);
+}
+
